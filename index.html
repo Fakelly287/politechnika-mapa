@@ -9,7 +9,7 @@
     function initMap() {
       // Definiowanie granic kampusu Politechniki Śląskiej
       const campusBounds = {
-        north: 50.293,
+        north: 50.292,
         south: 50.280,
         west: 18.670,
         east: 18.682
@@ -19,8 +19,8 @@
       map = new google.maps.Map(document.getElementById('map'), {
         center: { lat: 50.286263, lng: 18.676573 }, // Przykładowa lokalizacja w centrum kampusu
         zoom: 15, // Początkowy poziom powiększenia
-        minZoom: 5, // Minimalny poziom powiększenia
-        maxZoom: 16, // Maksymalny poziom powiększenia
+        minZoom: 15, // Minimalny poziom powiększenia
+        maxZoom: 20, // Maksymalny poziom powiększenia
         restriction: {
           latLngBounds: campusBounds,
           strictBounds: false // Ustaw na true, jeśli chcesz całkowicie zablokować przesuwanie poza granice
